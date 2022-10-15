@@ -86,6 +86,9 @@ video{
   flex-direction: column;
   color: rgba(128, 128, 128, 0.773);
   padding: 0.5rem 0rem 0;
+  width: 80%;
+  margin: auto;
+  
  
 }
 .gallery-img img {
@@ -101,7 +104,7 @@ video{
 }
 
 .des, .geo, .date{
-  padding: 10px;
+  padding: 2px;
   background-color: #00000040;
   color: aliceblue;
   font-weight: 300;

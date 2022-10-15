@@ -3,10 +3,8 @@ getData()
 async function getData(){
   const response = await fetch('/api')
   const data = await response.json()
-  console.log(data)
   const gallery=document.querySelector("#gallery")
   for (element of data) {
-    console.log(element)
     const root = document.createElement('div')
     root.classList.add("root")
     const des =document.createElement('h3')

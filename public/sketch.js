@@ -1,4 +1,5 @@
 function setup() {
+ 
   noCanvas()
   const video = createCapture(VIDEO)
   video.size(500,500)
@@ -9,6 +10,7 @@ function setup() {
     const des = document.getElementById("description").value
     video.loadPixels()
     const image64 = video.canvas.toDataURL()
+    console.log("hi")
     const data = { lat, lon, des, image64 }
     const options = {
       method: "POST",
@@ -18,8 +20,9 @@ function setup() {
       body: JSON.stringify(data),
     }
     const response = await fetch("/api", options)
-   // const json = await response.json()
-   // console.log(json)
+    console.log(response)
+   const json = await response.json()
+   console.log(json)
   })
 
   if ("geolocation" in navigator) {
