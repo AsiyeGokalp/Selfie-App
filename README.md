@@ -6,8 +6,6 @@
 
 Selfie App allows you to submit an image of your self along with your geolocation.
 
-![Page view](./images/ph1.png)
-
 ---
 
 ## Setup
