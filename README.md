@@ -1,47 +1,54 @@
-# Selfie-App
-
-# Todo List
+# Selfie App
 
 ---
 
-## How does ToDo list be used?
+## How does Selfie App be used?
 
-ToDo List Checks to see if plans are made.
+Selfie App allows you to submit an image of your self along with your geolocation.
 
 ![Page view](./images/ph1.png)
 
 ---
 
-## Demo
+## Setup
 
-Here is a working live demo : [Demo](https://asiyegokalp.github.io/TodoList/)
+In your terminal:
 
----
+```sh
+npm install
+```
+
+then start your server
+
+```sh
+npm start
+```
+
+or if in development: `npm run dev`
+
+## Go to: `localhost:3030` to see the magic.
 
 ## ES6 + Features
 
-- Arrow Functions
-- Modules export/import
-- localStorage
-
----
+- [ ] HTTPS support
+- [ ] Authentication and login
 
 ## Structure
+
+---
 
 ```
 ├── images
 │   └── ph1.png
 │
 ├── public
+│   ├── logs
+│   │    ├── index.html
+│   │    └── logs.js
+│   ├── index.html
+│   ├── sketch.js   s
 │   └── style.css
-├── src
-│   ├── page
-│   │     ├── deleteCheck.js
-│   │     ├── filterTodo.js
-│   │     └── localStorage.js
-│   └── view
-│         ├──generateAddTodo.js
-│         └──generateTodoList.js
+│
 ├── app.js
 ├── index.html
 └── README.md
