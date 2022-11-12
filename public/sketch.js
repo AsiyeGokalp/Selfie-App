@@ -8,9 +8,8 @@ function setup() {
   const button = document.getElementById("submit")
   button.addEventListener("click", async (event) => {
     const des = document.getElementById("description").value
-    video.loadPixels()
-    const image64 = video.canvas.toDataURL()
-    console.log("hi")
+    video.loadPixels()//taking video and loading the pixels onto a canvas
+    const image64 = video.canvas.toDataURL()//converting the video canvas to base64
     const data = { lat, lon, des, image64 }
     const options = {
       method: "POST",
@@ -20,9 +19,8 @@ function setup() {
       body: JSON.stringify(data),
     }
     const response = await fetch("/api", options)
-    console.log(response)
-   const json = await response.json()
-   console.log(json)
+    const json = await response.json()
+    console.log(json)
   })
 
   if ("geolocation" in navigator) {
